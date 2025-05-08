@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endeshaw Investments | Asosa, Ethiopia</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        
+        .about {
+            background: var(--light);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .profile-img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+        }
+        
+        .contact {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">SOLOMON <span>Investments</span></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hero" id="home">
+                <h1>Strategic Investments for Sustainable Growth</h1>
+                <p>Professional investment services in Asosa, Ethiopia helping clients build and preserve wealth through carefully selected opportunities.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Investment Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Portfolio Management</h3>
+                    <p>Customized investment strategies tailored to your financial goals and risk tolerance, with ongoing monitoring and rebalancing.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Real Estate Investments</h3>
+                    <p>Strategic property investments in Asosa and surrounding regions with strong growth potential and attractive returns.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Agricultural Ventures</h3>
+                    <p>Investment opportunities in Ethiopia's thriving agricultural sector, from coffee plantations to modern farming operations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Development</h3>
+                    <p>Strategic partnerships and investments in promising local businesses with growth potential.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Retirement Planning</h3>
+                    <p>Long-term investment strategies to help you build wealth for a secure and comfortable retirement.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Market Analysis</h3>
+                    <p>Comprehensive research and insights into local and regional investment opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Solomon Endeshaw</h2>
+            <div class="about-content">
+                <div>
+                    <img src="imge.jpg" alt="Solomon Endeshaw" class="profile-img">
+                </div>
+                <div>
+                    <h3>Professional Investment Advisor in Asosa</h3>
+                    <p>Solomon Endeshaw is a seasoned investment professional with extensive experience in identifying and managing profitable investment opportunities in the Asosa region and throughout Ethiopia.</p>
+                    <p>With a keen eye for emerging market trends and a deep understanding of local economic conditions, Solomon has helped numerous clients grow their wealth through carefully selected investments in real estate, agriculture, and local businesses.</p>
+                    <p>His approach combines rigorous financial analysis with firsthand knowledge of the regional market, ensuring that investment decisions are both data-driven and contextually informed.</p>
+                    <p>Solomon holds a degree in Economics and has completed specialized training in investment management and financial planning. He is committed to ethical investment practices that contribute to both client prosperity and local economic development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contact Us</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Investment Interest</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>Endeshaw Investments &copy; 2023. All Rights Reserved.</p>
+            <p>Asosa, Ethiopia | Phone: +251 XXX XXX XXX | Email: info@endeshawinvestments.com</p>
+        </div>
+    </footer>
+</body>
+</html>
